@@ -6,5 +6,5 @@ export interface Store {
 }
 
 export const getStores = (): Promise<Store[]> => {
-  return apiClient.get('/stores');
+  return apiClient.get('stores');
 };

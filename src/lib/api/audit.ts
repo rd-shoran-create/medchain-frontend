@@ -9,9 +9,9 @@ export interface AuditSummary {
 }
 
 export const getAudit = (storeAddress: string): Promise<AuditSummary> => {
-  return apiClient.get(`/audit/${storeAddress}`);
+  return apiClient.get(`audit/${storeAddress}`);
 };
 
 export const getInventory = (store: string, drugId: number): Promise<{ quantity: number }> => {
-  return apiClient.get(`/inventory/${store}/${drugId}`);
+  return apiClient.get(`inventory/${store}/${drugId}`);
 };

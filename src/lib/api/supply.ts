@@ -9,9 +9,9 @@ export interface SupplyEvent {
 }
 
 export const getSupplyHistory = (): Promise<SupplyEvent[]> => {
-  return apiClient.get('/supply/history');
+  return apiClient.get('supply/history');
 };
 
 export const recordSupply = (data: { storeAddress: string; drugId: number; quantity: number }): Promise<{ status: string, txHash: string }> => {
-  return apiClient.post('/supply', data);
+  return apiClient.post('supply', data);
 };

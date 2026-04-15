@@ -10,7 +10,7 @@ export interface SaleEvent {
 }
 
 export const getSales = (): Promise<SaleEvent[]> => {
-  return apiClient.get('/sales');
+  return apiClient.get('sales');
 };
 
 export const sellWithPrescription = (data: { 
@@ -19,5 +19,5 @@ export const sellWithPrescription = (data: {
   quantity: number; 
   itemIndex: number 
 }): Promise<{ status: string, txHash: string }> => {
-  return apiClient.post('/sell', data);
+  return apiClient.post('sell', data);
 };

@@ -54,29 +54,29 @@ export interface DispenseTrace {
 }
 
 export const getAllEntities = (): Promise<EntityInfo[]> => {
-  return apiClient.get('/entities/all');
+  return apiClient.get('entities/all');
 };
 
 export const getHospitals = (): Promise<{ address: string; name: string }[]> => {
-  return apiClient.get('/hospitals');
+  return apiClient.get('hospitals');
 };
 
 export const getTraceProduction = (): Promise<ProductionTrace[]> => {
-  return apiClient.get('/trace/production');
+  return apiClient.get('trace/production');
 };
 
 export const getTraceDistribution = (): Promise<DistributionTrace[]> => {
-  return apiClient.get('/trace/distribution');
+  return apiClient.get('trace/distribution');
 };
 
 export const getTraceDispense = (): Promise<DispenseTrace[]> => {
-  return apiClient.get('/trace/dispense');
+  return apiClient.get('trace/dispense');
 };
 
 export const registerEntity = (type: string, data: any): Promise<{ status: string; txHash: string }> => {
-  return apiClient.post(`/entities/${type}`, data);
+  return apiClient.post(`entities/${type}`, data);
 };
 
 export const setManufacturerLimit = (data: { manufacturerAddress: string; drugId: number; maxAmount: number }): Promise<{ status: string; txHash: string }> => {
-  return apiClient.post('/manufacturer/limit', data);
+  return apiClient.post('manufacturer/limit', data);
 };
