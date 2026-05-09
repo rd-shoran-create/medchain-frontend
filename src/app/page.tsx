@@ -229,7 +229,7 @@ export default function LandingPage() {
                   whileHover={{ y: -8, scale: 1.01 }}
                   className="group bg-white rounded-[32px] p-5 border border-slate-100 shadow-[0_12px_24px_-10px_rgba(0,0,0,0.04)] cursor-pointer overflow-hidden text-left w-full h-full flex flex-col"
                 >
-                  <div className="aspect-[4/5] w-full rounded-2xl overflow-hidden mb-5 bg-slate-50 relative">
+                  <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden mb-5 bg-slate-50">
                     <Image src={role.img} alt={role.name} fill className="object-cover group-hover:scale-105 transition-transform duration-700 mixture-blend-multiply" />
                   </div>
                   <div className="space-y-2 mt-auto">
@@ -261,7 +261,7 @@ export default function LandingPage() {
                   className="bg-white rounded-[48px] max-w-5xl w-full overflow-hidden shadow-2xl relative border border-white/20"
                 >
                   <div className="flex flex-col md:flex-row">
-                    <div className="md:w-5/12 h-64 md:h-[600px] overflow-hidden bg-slate-50 relative">
+                    <div className="relative md:w-5/12 h-64 md:h-[600px] overflow-hidden bg-slate-50">
                       <Image src={selectedRole.img} alt={selectedRole.name} fill className="object-cover" />
                     </div>
                     <div className="md:w-7/12 p-8 md:p-16 space-y-10 flex flex-col justify-center">

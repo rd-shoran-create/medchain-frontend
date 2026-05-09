@@ -79,8 +79,6 @@ export default function MedicalStoreDashboard() {
     }))
   });
 
-  // const totalStock = inventoryQueries.reduce((acc, query) => acc + (query.data?.quantity || 0), 0);
-  // const loadingInventory = inventoryQueries.some(q => q.isLoading);
 
   const mutation = useMutation({
     mutationFn: sellWithPrescription,
@@ -112,7 +110,7 @@ export default function MedicalStoreDashboard() {
         alert("Slip Hash not valid or prescription expired/empty.");
         setCheckedP(null);
       }
-    } catch (e) {
+    } catch {
       alert("Error checking slip: Invalid hash or server error");
       setCheckedP(null);
     }
