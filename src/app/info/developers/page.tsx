@@ -151,7 +151,7 @@ export default function DevelopersPage() {
               <span className="text-lg font-bold text-slate-900 tracking-tight">PrescChain</span>
             </div>
             <p className="text-slate-400 text-[10px] text-center md:text-left font-bold uppercase tracking-wider">
-              © 2024 PrescChain Infrastructure. Designed for High-Integrity Pharma Logistics.
+              © 2026 PrescChain Infrastructure. Designed for High-Integrity Pharma Logistics.
             </p>
           </div>
         </footer>

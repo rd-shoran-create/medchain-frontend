@@ -360,7 +360,11 @@ export default function LandingPage() {
                     transition={{ delay: i * 0.2 }}
                     className="space-y-6 group"
                   >
-                    <div className={`w-14 h-14 rounded-2xl bg-${feature.color}-500/10 border border-${feature.color}-500/20 flex items-center justify-center text-${feature.color}-400 group-hover:scale-110 transition-transform duration-500`}>
+                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 ${
+                      feature.color === 'indigo' ? 'bg-indigo-500/10 border border-indigo-500/20 text-indigo-400' :
+                      feature.color === 'violet' ? 'bg-violet-500/10 border border-violet-500/20 text-violet-400' :
+                      'bg-fuchsia-500/10 border border-fuchsia-500/20 text-fuchsia-400'
+                    }`}>
                       <span className="material-symbols-outlined text-3xl">{feature.icon}</span>
                     </div>
                     <div className="space-y-3">
@@ -414,7 +418,7 @@ export default function LandingPage() {
           ))}
         </div>
         <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-slate-200">
-          <p className="text-slate-400 text-xs text-center">© 2024 PrescChain Infrastructure. All rights reserved.</p>
+          <p className="text-slate-400 text-xs text-center">© 2026 PrescChain Infrastructure. All rights reserved.</p>
         </div>
       </footer>
     </div>

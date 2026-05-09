@@ -67,7 +67,7 @@ const pageData: Record<string, any> = {
     details: [
       {
         title: "DSCSA Alignment",
-        content: "Automated track-and-trace capabilities ensure full compliance with unit-level tracking requirements mandated for 2024 and beyond.",
+        content: "Automated track-and-trace capabilities ensure full compliance with unit-level tracking requirements mandated for 2026 and beyond.",
         icon: "gavel"
       },
       {
@@ -111,7 +111,7 @@ const pageData: Record<string, any> = {
     stats: [
       { label: "Focus", value: "Non-Diversion" },
       { label: "Tech", value: "Web3/Next.js" },
-      { label: "Year", value: "2024" }
+      { label: "Year", value: "2026" }
     ]
   },
   research: {
@@ -362,7 +362,7 @@ export default function InfoPage() {
             <span className="text-lg font-bold text-slate-900 tracking-tight">PrescChain</span>
           </div>
           <p className="text-slate-400 text-[10px] text-center md:text-left font-bold uppercase tracking-wider">
-            © 2024 PrescChain Infrastructure. Designed for High-Integrity Pharma Logistics.
+            © 2026 PrescChain Infrastructure. Designed for High-Integrity Pharma Logistics.
           </p>
         </div>
       </footer>
