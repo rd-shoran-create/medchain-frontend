@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { getPrescriptions, issuePrescription, getPrescriptionMetadata, getPatients, searchPatients, registerPatient } from "@/lib/api/prescription";
+import { getPrescriptions, issuePrescription, getPatients, searchPatients, registerPatient } from "@/lib/api/prescription";
 import DashboardNav from "@/components/DashboardNav";
 import PrescriptionSlip from "@/components/PrescriptionSlip";
 
@@ -197,7 +197,7 @@ export default function HospitalDashboard() {
 
   const issueMutation = useMutation({
     mutationFn: issuePrescription,
-    onSuccess: (data) => {
+    onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['prescriptions'] });
       queryClient.invalidateQueries({ queryKey: ['patientHistory'] });
       setShowSuccessCard(true);

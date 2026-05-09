@@ -11,7 +11,7 @@ interface DashboardNavProps {
 
 export default function DashboardNav({ activeTab, onTabChange, roleOverride }: DashboardNavProps) {
   const pathname = usePathname();
-  const [role, setRole] = useState<string | null>(null);
+  const [, setRole] = useState<string | null>(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -21,7 +21,7 @@ export default function DashboardNav({ activeTab, onTabChange, roleOverride }: D
 
   let title = "PrescChain";
   let icon = "hub";
-  let isHospital = pathname.includes('/hospital') || pathname.includes('/reception');
+  const isHospital = pathname.includes('/hospital') || pathname.includes('/reception');
 
   if (pathname.includes('/reception')) {
     title = "Reception Desk";

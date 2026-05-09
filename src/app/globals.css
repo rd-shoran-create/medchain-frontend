@@ -29,7 +29,7 @@ body {
 /* Generated Design System */
 
         body { font-family: 'Inter', sans-serif; background-color: #fcf8ff; }
-        .font-headline { font-family: 'Manrope', sans-serif; }
+        .font-headline { font-family: var(--font-manrope), 'Manrope', sans-serif; }
         .glass-panel {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px);
