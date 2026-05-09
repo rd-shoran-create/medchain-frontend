@@ -79,7 +79,6 @@ export default function MedicalStoreDashboard() {
     }))
   });
 
-
   const mutation = useMutation({
     mutationFn: sellWithPrescription,
     onSuccess: () => {

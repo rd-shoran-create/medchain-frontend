@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import LandingNav from "@/components/LandingNav";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -100,11 +100,10 @@ export default function LandingPage() {
               className="flex-1 relative"
             >
               <div className="relative z-10 w-full max-w-[450px] aspect-square rounded-[40px] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-white/20">
-                <Image 
+                <img 
                   src="/images/hero.png" 
                   alt="PrescChain Hero" 
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-transparent"></div>
               </div>
@@ -180,7 +179,7 @@ export default function LandingPage() {
                 >
                   <div className="bg-white p-5 rounded-[32px] border border-slate-100 shadow-[0_12px_24px_-10px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] transition-all duration-500 h-full flex flex-col text-left">
                     <div className="aspect-[4/5] w-full rounded-2xl overflow-hidden mb-5 bg-slate-50 relative">
-                      <Image src={step.img} alt={step.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700 mixture-blend-multiply" />
+                      <img src={step.img} alt={step.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 mixture-blend-multiply" />
                     </div>
                     
                     <div className="space-y-2 mt-auto">
@@ -229,8 +228,8 @@ export default function LandingPage() {
                   whileHover={{ y: -8, scale: 1.01 }}
                   className="group bg-white rounded-[32px] p-5 border border-slate-100 shadow-[0_12px_24px_-10px_rgba(0,0,0,0.04)] cursor-pointer overflow-hidden text-left w-full h-full flex flex-col"
                 >
-                  <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden mb-5 bg-slate-50">
-                    <Image src={role.img} alt={role.name} fill className="object-cover group-hover:scale-105 transition-transform duration-700 mixture-blend-multiply" />
+                  <div className="aspect-[4/5] w-full rounded-2xl overflow-hidden mb-5 bg-slate-50">
+                    <img src={role.img} alt={role.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mixture-blend-multiply" />
                   </div>
                   <div className="space-y-2 mt-auto">
                     <h4 className="text-lg font-bold text-slate-900 leading-tight">{role.name} Terminal</h4>
@@ -261,8 +260,8 @@ export default function LandingPage() {
                   className="bg-white rounded-[48px] max-w-5xl w-full overflow-hidden shadow-2xl relative border border-white/20"
                 >
                   <div className="flex flex-col md:flex-row">
-                    <div className="relative md:w-5/12 h-64 md:h-[600px] overflow-hidden bg-slate-50">
-                      <Image src={selectedRole.img} alt={selectedRole.name} fill className="object-cover" />
+                    <div className="md:w-5/12 h-64 md:h-[600px] overflow-hidden bg-slate-50">
+                      <img src={selectedRole.img} alt={selectedRole.name} className="w-full h-full object-cover" />
                     </div>
                     <div className="md:w-7/12 p-8 md:p-16 space-y-10 flex flex-col justify-center">
                       <div className="space-y-6">

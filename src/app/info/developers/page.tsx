@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from 'react';
 import LandingNav from '@/components/LandingNav';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const developers = [
@@ -105,7 +105,7 @@ export default function DevelopersPage() {
                 {/* DP / Passport size Avatar on the left */}
                 <div className="flex-shrink-0 relative">
                   <div className="w-32 h-40 md:w-40 md:h-48 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-400 shadow-inner overflow-hidden group-hover:scale-[1.02] transition-transform duration-500 relative z-10">
-                    <Image src={dev.image} alt={dev.name} fill className="object-cover" />
+                    <img src={dev.image} alt={dev.name} className="w-full h-full object-cover" />
                   </div>
                   <div className={`absolute inset-0 bg-gradient-to-br ${dev.gradient} blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-2xl`}></div>
                 </div>

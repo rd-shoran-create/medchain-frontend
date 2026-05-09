@@ -1,14 +1,19 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 interface DashboardNavProps {
   activeTab?: string;
   onTabChange?: (tab: string) => void;
+  roleOverride?: string;
 }
 
-export default function DashboardNav({ activeTab, onTabChange }: DashboardNavProps) {
+export default function DashboardNav({ activeTab, onTabChange, roleOverride }: DashboardNavProps) {
   const pathname = usePathname();
+  useEffect(() => {
+    // If you need to do anything with roleOverride later, it goes here
+  }, [roleOverride]);
 
   let title = "PrescChain";
   let icon = "hub";
