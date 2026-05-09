@@ -16,7 +16,7 @@ export default function LoginPage({ params }: { params: { role: string } }) {
       case 'medical-store': return 'Pharmacy Terminal';
       case 'regulator': return 'Regulator Node';
       case 'manufacturer': return 'Manufacturer Hub';
-      default: return 'MedChain Portal';
+      default: return 'PrescChain Portal';
     }
   };
 
@@ -62,7 +62,7 @@ export default function LoginPage({ params }: { params: { role: string } }) {
       <div className="w-full max-w-md relative z-10">
         <Link href="/" className="flex items-center justify-center gap-2 mb-10 hover:opacity-80 transition-opacity">
           <span className="material-symbols-outlined text-primary text-3xl">hub</span>
-          <span className="font-headline font-extrabold text-primary text-2xl tracking-tight">MedChain</span>
+          <span className="font-headline font-extrabold text-primary text-2xl tracking-tight">PrescChain</span>
         </Link>
 
         <div className="glass-card rounded-[2.5rem] p-8 border border-outline-variant/20 shadow-2xl bg-white/80 backdrop-blur-xl">

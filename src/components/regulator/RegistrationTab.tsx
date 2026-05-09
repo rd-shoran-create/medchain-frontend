@@ -152,7 +152,7 @@ export default function RegistrationTab() {
           </div>
           <div>
             <h3 className="text-xl font-bold font-headline tracking-tight text-slate-800">Register New Entity</h3>
-            <p className="text-xs text-slate-500 font-semibold mt-0.5">Onboard a new node to the MedChain network</p>
+            <p className="text-xs text-slate-500 font-semibold mt-0.5">Onboard a new node to the PrescChain network</p>
           </div>
         </div>
 

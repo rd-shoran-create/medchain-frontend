@@ -9,7 +9,7 @@ const pageData: Record<string, any> = {
   network: {
     title: "Network Architecture",
     tagline: "Decentralized infrastructure for pharmaceutical integrity.",
-    description: "The MedChain network operates on a private, permissioned blockchain ledger, ensuring that every handoff in the supply chain is cryptographically verified. Unlike centralized databases, our node-based architecture prevents single points of failure and unauthorized data manipulation.",
+    description: "The PrescChain network operates on a private, permissioned blockchain ledger, ensuring that every handoff in the supply chain is cryptographically verified. Unlike centralized databases, our node-based architecture prevents single points of failure and unauthorized data manipulation.",
     details: [
       {
         title: "Node Distribution",
@@ -36,7 +36,7 @@ const pageData: Record<string, any> = {
   security: {
     title: "Security Protocols",
     tagline: "Military-grade encryption for patient and product safety.",
-    description: "MedChain utilizes advanced cryptographic standards to ensure that sensitive medical data and drug unit identities are impenetrable. We prioritize unit-level security over batch security.",
+    description: "PrescChain utilizes advanced cryptographic standards to ensure that sensitive medical data and drug unit identities are impenetrable. We prioritize unit-level security over batch security.",
     details: [
       {
         title: "Keccak-256 Hashing",
@@ -63,7 +63,7 @@ const pageData: Record<string, any> = {
   compliance: {
     title: "Compliance Standards",
     tagline: "Aligning with FDA and Global Regulatory Frameworks.",
-    description: "MedChain is designed to exceed the requirements set by the FDA Drug Supply Chain Security Act (DSCSA). We automate compliance reporting to reduce administrative overhead and eliminate human error.",
+    description: "PrescChain is designed to exceed the requirements set by the FDA Drug Supply Chain Security Act (DSCSA). We automate compliance reporting to reduce administrative overhead and eliminate human error.",
     details: [
       {
         title: "DSCSA Alignment",
@@ -88,9 +88,9 @@ const pageData: Record<string, any> = {
     ]
   },
   about: {
-    title: "About MedChain",
+    title: "About PrescChain",
     tagline: "The Immutable Pharma Network.",
-    description: "MedChain was founded with a singular mission: to eliminate the black market for controlled substances. By leveraging blockchain technology, we provide the transparency needed to protect patients and ensure that life-saving medications reach their intended destination.",
+    description: "PrescChain was founded with a singular mission: to eliminate the black market for controlled substances. By leveraging blockchain technology, we provide the transparency needed to protect patients and ensure that life-saving medications reach their intended destination.",
     details: [
       {
         title: "Combating Diversion",
@@ -115,7 +115,7 @@ const pageData: Record<string, any> = {
     ]
   },
   research: {
-    title: "MedChain Research",
+    title: "PrescChain Research",
     tagline: "Pushing the boundaries of supply chain intelligence.",
     description: "Our research initiatives focus on the intersection of distributed ledger technology and pharmaceutical logistics. We are building the next generation of predictive auditing tools.",
     details: [
@@ -144,7 +144,7 @@ const pageData: Record<string, any> = {
   ethics: {
     title: "Ethics & Privacy",
     tagline: "Sovereign privacy in an immutable world.",
-    description: "Managing sensitive medical data requires a delicate balance between total transparency and patient privacy. MedChain employs a hybrid data model to solve this challenge.",
+    description: "Managing sensitive medical data requires a delicate balance between total transparency and patient privacy. PrescChain employs a hybrid data model to solve this challenge.",
     details: [
       {
         title: "Hybrid Privacy Model",
@@ -169,18 +169,18 @@ const pageData: Record<string, any> = {
     ]
   },
   contact: {
-    title: "Contact MedChain",
+    title: "Contact PrescChain",
     tagline: "Get in touch with the core development team.",
     description: "We are currently in active development. For technical inquiries, integration requests, or developer partnerships, please reach out via our official channels.",
     details: [
-       {
+      {
         title: "Developer Support",
-        content: "Currently maintained by the MedChain Core Team. Documentation and early access APIs are available for verified institutional partners.",
+        content: "Currently maintained by the PrescChain Core Team. Documentation and early access APIs are available for verified institutional partners.",
         icon: "terminal"
       },
       {
         title: "Integrations",
-        content: "Looking to integrate MedChain into your Hospital Management System (HMS) or ERP? Our team can provide custom adapter solutions.",
+        content: "Looking to integrate PrescChain into your Hospital Management System (HMS) or ERP? Our team can provide custom adapter solutions.",
         icon: "integration_instructions"
       },
       {
@@ -191,7 +191,7 @@ const pageData: Record<string, any> = {
     ],
     stats: [
       { label: "Response", value: "24-48h" },
-      { label: "Email", value: "dev@medchain.io" },
+      { label: "Email", value: "dev@prescchain.io" },
       { label: "GitHub", value: "PrescChain" }
     ]
   },
@@ -200,7 +200,7 @@ const pageData: Record<string, any> = {
     tagline: "A new standard for health data disclosure.",
     description: "Our privacy policy is centered around the concept of 'Privacy by Design'. We ensure that transparency in the supply chain does not come at the cost of individual dignity.",
     details: [
-       {
+      {
         title: "Immutable Disclosure",
         content: "Users must be aware that ledger records are permanent. While data is anonymized, the event history itself cannot be erased, fulfilling the requirements of absolute accountability.",
         icon: "warning"
@@ -224,10 +224,10 @@ const pageData: Record<string, any> = {
   },
   terms: {
     title: "Terms of Service",
-    tagline: "Rules of engagement for the MedChain infrastructure.",
-    description: "By accessing the MedChain network, stakeholders agree to the following terms designed to maintain the integrity and security of the pharmaceutical supply chain.",
+    tagline: "Rules of engagement for the PrescChain infrastructure.",
+    description: "By accessing the PrescChain network, stakeholders agree to the following terms designed to maintain the integrity and security of the pharmaceutical supply chain.",
     details: [
-       {
+      {
         title: "Stakeholder Accountability",
         content: "All nodes are responsible for the security of their private keys. Any unauthorized use of credentials must be reported to the Regulator node immediately.",
         icon: "security_update_good"
@@ -239,7 +239,7 @@ const pageData: Record<string, any> = {
       },
       {
         title: "System Integrity",
-        content: "MedChain provides the infrastructure only. Actual clinical decisions remain the responsibility of licensed medical professionals.",
+        content: "PrescChain provides the infrastructure only. Actual clinical decisions remain the responsibility of licensed medical professionals.",
         icon: "clinical_notes"
       }
     ],
@@ -247,6 +247,33 @@ const pageData: Record<string, any> = {
       { label: "Agreement", value: "Required" },
       { label: "Governing", value: "Blockchain Law" },
       { label: "Revocation", value: "Instant" }
+    ]
+  },
+  developers: {
+    title: "Research & Development Team",
+    tagline: "The minds behind PrescChain's immutable architecture.",
+    description: "Our dedicated team of researchers and developers working to secure the global pharmaceutical supply chain through advanced cryptographic implementations and decentralized infrastructure.",
+    details: [
+      {
+        title: "Aarti Punia",
+        content: "Currently pursuing a Ph.D. in Computer Science at the Department of Computer Science & Applications, M.D. University, Rohtak, India. She completed her B.Tech. in Computer Science in 2012 and M.Tech in 2014 from M.D.U, Rohtak. Her main research area includes Blockchain, Cloud computing etc. She has published some research papers indexed in SCI, SCIE and presented papers in national and international conferences.",
+        dp: true
+      },
+      {
+        title: "Prof. Preeti Gulia",
+        content: "Ph.D. in computer science (2013). Currently working as a Professor at the Department of Computer Science & Applications, M.D. University, Rohtak, India. Serving the Department since 2009. Published more than 100 research papers indexed in SCI, SCIE, and Scopus. Area of research includes Data Mining, Big Data, Machine Learning, Deep Learning, IoT, and Software Engineering. Active professional member of IAENG, CSI, and ACM.",
+        dp: true
+      },
+      {
+        title: "Prof. Nasib Singh Gill",
+        content: "Head of the Department of Computer Science & Applications, M. D. University, Rohtak, India. Holds post-Doctoral research from Brunel University (2001-2002) and Ph.D. (1996). Recipient of the Commonwealth Fellowship Award. Director of the Directorate of Distance Education & Digital Learning Centre. Published more than 304 research papers indexed in SCI, SCIE, and Scopus. Research interests include IoT, Machine & Deep Learning, Information and Network Security.",
+        dp: true
+      }
+    ],
+    stats: [
+      { label: "Focus", value: "Blockchain Security" },
+      { label: "Publications", value: "400+" },
+      { label: "Institution", value: "M.D. University" }
     ]
   }
 };
@@ -258,13 +285,13 @@ export default function InfoPage() {
   return (
     <div className="min-h-screen bg-[#FDFDFF] text-slate-900 font-['Manrope'] overflow-x-hidden selection:bg-indigo-100 selection:text-indigo-900">
       <LandingNav />
-      
+
       {/* Background Blobs - Light Mode Pastels */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-100/40 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-violet-100/30 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
 
       <main className="pt-32 pb-20 px-6 max-w-7xl mx-auto relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -283,71 +310,77 @@ export default function InfoPage() {
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content Card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
             className="lg:col-span-2 space-y-12"
           >
             <div className="p-8 md:p-12 rounded-[2.5rem] bg-white/70 border border-slate-200/60 backdrop-blur-3xl shadow-[0_32px_64px_-16px_rgba(31,38,135,0.08)] relative overflow-hidden group">
-               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2 transition-colors"></div>
-               
-               <p className="text-lg md:text-xl text-slate-700 leading-relaxed mb-12 font-medium">
-                 {data.description}
-               </p>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2 transition-colors"></div>
 
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                 {data.details.map((detail: any, idx: number) => (
-                   <div key={idx} className="space-y-4">
-                     <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 border border-indigo-100 shadow-sm">
-                       <span className="material-symbols-outlined text-2xl">{detail.icon}</span>
-                     </div>
-                     <h3 className="text-xl font-bold text-slate-900">{detail.title}</h3>
-                     <p className="text-slate-500 text-sm leading-relaxed">
-                       {detail.content}
-                     </p>
-                   </div>
-                 ))}
-               </div>
+              <p className="text-lg md:text-xl text-slate-700 leading-relaxed mb-12 font-medium">
+                {data.description}
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {data.details.map((detail: any, idx: number) => (
+                  <div key={idx} className="space-y-4">
+                    {detail.dp ? (
+                      <div className="w-16 h-16 rounded-xl bg-slate-200 flex items-center justify-center text-slate-400 border border-slate-300 shadow-inner overflow-hidden">
+                        <span className="material-symbols-outlined text-3xl">person</span>
+                      </div>
+                    ) : (
+                      <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 border border-indigo-100 shadow-sm">
+                        <span className="material-symbols-outlined text-2xl">{detail.icon}</span>
+                      </div>
+                    )}
+                    <h3 className="text-xl font-bold text-slate-900">{detail.title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed">
+                      {detail.content}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="flex justify-center">
-                <Link 
-                    href="/" 
-                    className="flex items-center gap-2 text-slate-400 hover:text-indigo-600 font-bold transition-all group"
-                >
-                    <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
-                    Back to Terminal
-                </Link>
+              <Link
+                href="/"
+                className="flex items-center gap-2 text-slate-400 hover:text-indigo-600 font-bold transition-all group"
+              >
+                <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                Back to Terminal
+              </Link>
             </div>
           </motion.div>
 
           {/* Sidebar Metadata */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
             className="space-y-6"
           >
             <div className="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-200/60 shadow-sm">
-               <h4 className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-8">Metadata Explorer</h4>
-               <div className="space-y-8">
-                 {data.stats.map((stat: any, idx: number) => (
-                   <div key={idx} className="flex flex-col gap-1 border-l-2 border-indigo-100 pl-6 hover:border-indigo-500 transition-colors">
-                     <span className="text-[10px] text-slate-400 font-bold uppercase">{stat.label}</span>
-                     <span className="text-2xl font-extrabold text-slate-900 tracking-tight">{stat.value}</span>
-                   </div>
-                 ))}
-               </div>
+              <h4 className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-8">Metadata Explorer</h4>
+              <div className="space-y-8">
+                {data.stats.map((stat: any, idx: number) => (
+                  <div key={idx} className="flex flex-col gap-1 border-l-2 border-indigo-100 pl-6 hover:border-indigo-500 transition-colors">
+                    <span className="text-[10px] text-slate-400 font-bold uppercase">{stat.label}</span>
+                    <span className="text-2xl font-extrabold text-slate-900 tracking-tight">{stat.value}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="p-8 rounded-[2.5rem] bg-gradient-to-br from-indigo-50 to-violet-50 border border-indigo-100 shadow-sm">
-               <h4 className="text-xs font-bold text-indigo-900 mb-4 flex items-center gap-2">
-                 <span className="material-symbols-outlined text-sm">verified</span>
-                 Integrity Verified
-               </h4>
-               <p className="text-xs text-slate-500 leading-relaxed">
-                 All information on this page is cryptographically linked to the MedChain core protocol specification v1.4.2. Current network status: <span className="text-emerald-600 font-bold">Synchronized</span>.
-               </p>
+              <h4 className="text-xs font-bold text-indigo-900 mb-4 flex items-center gap-2">
+                <span className="material-symbols-outlined text-sm">verified</span>
+                Integrity Verified
+              </h4>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                All information on this page is cryptographically linked to the PrescChain core protocol specification v1.4.2. Current network status: <span className="text-emerald-600 font-bold">Synchronized</span>.
+              </p>
             </div>
           </motion.div>
         </div>
@@ -356,13 +389,13 @@ export default function InfoPage() {
       <footer className="py-12 border-t border-slate-100 mt-20 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-3">
-             <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center">
-               <span className="material-symbols-outlined text-white text-lg font-bold">hub</span>
-             </div>
-             <span className="text-lg font-bold text-slate-900 tracking-tight">MedChain</span>
+            <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center">
+              <span className="material-symbols-outlined text-white text-lg font-bold">hub</span>
+            </div>
+            <span className="text-lg font-bold text-slate-900 tracking-tight">PrescChain</span>
           </div>
           <p className="text-slate-400 text-[10px] text-center md:text-left font-bold uppercase tracking-wider">
-            © 2024 MedChain Infrastructure. Designed for High-Integrity Pharma Logistics.
+            © 2024 PrescChain Infrastructure. Designed for High-Integrity Pharma Logistics.
           </p>
         </div>
       </footer>

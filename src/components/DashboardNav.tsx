@@ -19,7 +19,7 @@ export default function DashboardNav({ activeTab, onTabChange, roleOverride }: D
     }
   }, [roleOverride]);
 
-  let title = "MedChain";
+  let title = "PrescChain";
   let icon = "hub";
   let isHospital = pathname.includes('/hospital') || pathname.includes('/reception');
 

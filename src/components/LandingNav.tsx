@@ -13,7 +13,7 @@ export default function LandingNav() {
             <span className="material-symbols-outlined text-white text-2xl font-bold">hub</span>
           </div>
           <span className="font-['Manrope'] text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">
-            MedChain
+            PrescChain
           </span>
         </div>
         <div className="hidden md:flex items-center gap-10">

@@ -6,7 +6,7 @@ import Providers from "@/components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MedChain | Advanced Web3 Pharmacy Auditing",
+  title: "PrescChain | Advanced Web3 Pharmacy Auditing",
   description: "A decentralized, immutable track-and-trace system for controlled substances.",
 };
 

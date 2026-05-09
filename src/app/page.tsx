@@ -82,13 +82,13 @@ export default function LandingPage() {
               </motion.div>
               
               <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-['Manrope'] font-extrabold tracking-tight leading-[1.1] text-slate-900">
-                MedChain: <br />
+                PrescChain: <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">The Immutable</span> <br />
                 Pharma Network.
               </motion.h1>
 
               <motion.p variants={itemVariants} className="text-base md:text-lg text-slate-600 max-w-xl leading-relaxed mx-auto lg:mx-0">
-                Securing the global pharmaceutical supply chain with cryptographic certainty. MedChain provides end-to-end immutable tracking for controlled substances.
+                Securing the global pharmaceutical supply chain with cryptographic certainty. PrescChain provides end-to-end immutable tracking for controlled substances.
               </motion.p>
             </div>
 
@@ -101,7 +101,7 @@ export default function LandingPage() {
               <div className="relative z-10 w-full max-w-[450px] aspect-square rounded-[40px] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-white/20">
                 <img 
                   src="/images/hero.png" 
-                  alt="MedChain Hero" 
+                  alt="PrescChain Hero" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-transparent"></div>
@@ -343,7 +343,7 @@ export default function LandingPage() {
                     title: 'Unit-Level Traceability', 
                     icon: 'account_tree',
                     color: 'violet',
-                    desc: 'Unlike traditional batch-tracking, MedChain treats individual drug units as unique blockchain tokens (ERC-721/1155 derivative), eliminating bulk leakage and unauthorized diversion.' 
+                    desc: 'Unlike traditional batch-tracking, PrescChain treats individual drug units as unique blockchain tokens (ERC-721/1155 derivative), eliminating bulk leakage and unauthorized diversion.' 
                   },
                   { 
                     title: 'Immutable Auditing', 
@@ -377,13 +377,13 @@ export default function LandingPage() {
       </main>
 
       <footer className="py-20 border-t border-slate-100 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-12">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center">
                 <span className="material-symbols-outlined text-white text-lg">hub</span>
               </div>
-              <span className="text-xl font-bold font-['Manrope'] text-slate-900 tracking-tight">MedChain</span>
+              <span className="text-xl font-bold font-['Manrope'] text-slate-900 tracking-tight">PrescChain</span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">
               Global blockchain infrastructure for secure pharmaceutical custody and forensic auditing.
@@ -392,7 +392,8 @@ export default function LandingPage() {
           {[
             { title: 'Platform', links: ['Network', 'Security', 'Compliance'] },
             { title: 'Company', links: ['About', 'Research', 'Contact', 'Ethics'] },
-            { title: 'Legal', links: ['Privacy', 'Terms'] }
+            { title: 'Legal', links: ['Privacy', 'Terms'] },
+            { title: 'Team', links: ['Developers'] }
           ].map(group => (
             <div key={group.title} className="space-y-6">
               <h5 className="font-bold text-slate-900">{group.title}</h5>
@@ -412,7 +413,7 @@ export default function LandingPage() {
           ))}
         </div>
         <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-slate-200">
-          <p className="text-slate-400 text-xs text-center">© 2024 MedChain Infrastructure. All rights reserved.</p>
+          <p className="text-slate-400 text-xs text-center">© 2024 PrescChain Infrastructure. All rights reserved.</p>
         </div>
       </footer>
     </div>
