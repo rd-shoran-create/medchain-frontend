@@ -248,33 +248,6 @@ const pageData: Record<string, any> = {
       { label: "Governing", value: "Blockchain Law" },
       { label: "Revocation", value: "Instant" }
     ]
-  },
-  developers: {
-    title: "Research & Development Team",
-    tagline: "The minds behind PrescChain's immutable architecture.",
-    description: "Our dedicated team of researchers and developers working to secure the global pharmaceutical supply chain through advanced cryptographic implementations and decentralized infrastructure.",
-    details: [
-      {
-        title: "Aarti Punia",
-        content: "Currently pursuing a Ph.D. in Computer Science at the Department of Computer Science & Applications, M.D. University, Rohtak, India. She completed her B.Tech. in Computer Science in 2012 and M.Tech in 2014 from M.D.U, Rohtak. Her main research area includes Blockchain, Cloud computing etc. She has published some research papers indexed in SCI, SCIE and presented papers in national and international conferences.",
-        dp: true
-      },
-      {
-        title: "Prof. Preeti Gulia",
-        content: "Ph.D. in computer science (2013). Currently working as a Professor at the Department of Computer Science & Applications, M.D. University, Rohtak, India. Serving the Department since 2009. Published more than 100 research papers indexed in SCI, SCIE, and Scopus. Area of research includes Data Mining, Big Data, Machine Learning, Deep Learning, IoT, and Software Engineering. Active professional member of IAENG, CSI, and ACM.",
-        dp: true
-      },
-      {
-        title: "Prof. Nasib Singh Gill",
-        content: "Head of the Department of Computer Science & Applications, M. D. University, Rohtak, India. Holds post-Doctoral research from Brunel University (2001-2002) and Ph.D. (1996). Recipient of the Commonwealth Fellowship Award. Director of the Directorate of Distance Education & Digital Learning Centre. Published more than 304 research papers indexed in SCI, SCIE, and Scopus. Research interests include IoT, Machine & Deep Learning, Information and Network Security.",
-        dp: true
-      }
-    ],
-    stats: [
-      { label: "Focus", value: "Blockchain Security" },
-      { label: "Publications", value: "400+" },
-      { label: "Institution", value: "M.D. University" }
-    ]
   }
 };
 
@@ -326,15 +299,9 @@ export default function InfoPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {data.details.map((detail: any, idx: number) => (
                   <div key={idx} className="space-y-4">
-                    {detail.dp ? (
-                      <div className="w-16 h-16 rounded-xl bg-slate-200 flex items-center justify-center text-slate-400 border border-slate-300 shadow-inner overflow-hidden">
-                        <span className="material-symbols-outlined text-3xl">person</span>
-                      </div>
-                    ) : (
-                      <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 border border-indigo-100 shadow-sm">
-                        <span className="material-symbols-outlined text-2xl">{detail.icon}</span>
-                      </div>
-                    )}
+                    <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 border border-indigo-100 shadow-sm">
+                      <span className="material-symbols-outlined text-2xl">{detail.icon}</span>
+                    </div>
                     <h3 className="text-xl font-bold text-slate-900">{detail.title}</h3>
                     <p className="text-slate-500 text-sm leading-relaxed">
                       {detail.content}
