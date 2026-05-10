@@ -14,16 +14,16 @@ const developers = [
     gradient: "from-indigo-500 to-violet-500"
   },
   {
-    name: "Prof. Preeti Gulia",
-    role: "Professor & Principal Investigator",
-    bio: "Ph.D. in computer science (2013). Currently working as a Professor at the Department of Computer Science & Applications, M.D. University, Rohtak, India. Serving the Department since 2009. Published more than 100 research papers indexed in SCI, SCIE, and Scopus. Area of research includes Data Mining, Big Data, Machine Learning, Deep Learning, IoT, and Software Engineering. Active professional member of IAENG, CSI, and ACM.",
+    name: "Dr. Preeti Gulia",
+    role: "Head of the Department & Principal Investigator",
+    bio: "Ph.D. in computer science (2013). Currently working as Head of the Department of Computer Science & Applications, M.D. University, Rohtak, India. Serving the Department since 2009. Published more than 100 research papers indexed in SCI, SCIE, and Scopus. Area of research includes Data Mining, Big Data, Machine Learning, Deep Learning, IoT, and Software Engineering. Active professional member of IAENG, CSI, and ACM.",
     image: "/images/Preeti.png",
     gradient: "from-violet-500 to-fuchsia-500"
   },
   {
     name: "Prof. Nasib Singh Gill",
-    role: "Head of the Department",
-    bio: "Head of the Department of Computer Science & Applications, M. D. University, Rohtak, India. Holds post-Doctoral research from Brunel University (2001-2002) and Ph.D. (1996). Recipient of the Commonwealth Fellowship Award. Director of the Directorate of Distance Education & Digital Learning Centre. Published more than 304 research papers indexed in SCI, SCIE, and Scopus. Research interests include IoT, Machine & Deep Learning, Information and Network Security.",
+    role: "Sr. Professor",
+    bio: "Sr. Professor at the Department of Computer Science & Applications, M. D. University, Rohtak, India. Holds post-Doctoral research from Brunel University (2001-2002) and Ph.D. (1996). Recipient of the Commonwealth Fellowship Award. Director of the Directorate of Distance Education & Digital Learning Centre. Published more than 304 research papers indexed in SCI, SCIE, and Scopus. Research interests include IoT, Machine & Deep Learning, Information and Network Security.",
     image: "/images/nasib.png",
     gradient: "from-fuchsia-500 to-rose-500"
   }
